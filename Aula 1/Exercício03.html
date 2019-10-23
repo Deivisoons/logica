@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt.br">
+<head>
+    <meta charset="UTF-8">
+    <title>Notas</title>
+
+    <script>
+        //função 
+        function media(){
+
+            //Obter media
+            var n1 = parseInt(document.getElementById("n1").value);
+            var n2 = parseInt(document.getElementById("n2").value);
+            var n3 = parseInt(document.getElementById("n3").value);
+
+            //Média
+            var media = (n1+n2+n3)/3;
+
+            //Mensagem 
+            if(media >=7){
+                alert ("aprovado");
+            }else{
+                alert("Reprovado")
+            }
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <input type="number" placeholder="numero1" id="n1">
+    <input type="number" placeholder="numero2" id="n2">
+    <input type="number" placeholder="numero3" id="n3">
+    <button onclick="media()">Calcular</button>
+</body>
+</html>

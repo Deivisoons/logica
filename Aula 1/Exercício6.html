@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 6</title>
+
+    <script>
+
+        //função
+        function enviar(){
+
+            //obter o dia
+            var dia = parseInt(document.getElementById("dia").value);
+
+
+            //Dias
+            if(dia == 5 || dia == 6 || dia == 12 || dia ==13 || dia == 19 || dia == 20 || dia == 26 || dia == 27){
+                alert("Final de semana");
+            }else{
+                alert("Dia de semana");
+            }
+        }
+
+    
+    </script>
+    </head>
+<body>
+    
+    <input type="text" placeholder="informe um dia" id="dia">
+    <button onclick="enviar()">enviar</button>
+    
+
+    
+</body>
+</html>

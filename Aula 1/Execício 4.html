@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Execício 4</title>
+
+    <script>
+        //função 
+        function calcular(){
+            
+            //Obter menor valor
+            var n1 = parseInt(document.getElementById("n1").value);
+            var n2 = parseInt(document.getElementById("n2").value);
+            var n3 = parseInt(document.getElementById("n3").value);
+
+            // Menor valor
+            if(n1<n2 && n1<n3){
+                alert(n1);
+            }
+
+            if(n2<n1 && n2<n3){
+                alert(n2);
+            }
+
+            if(n3<n1 && n3<n2){
+                alert(n3);
+            }
+        }
+    </script>
+</head>
+<body>
+    
+    <input type="number" placeholder="n1" id="n1">
+    <input type="number" placeholder="n2" id="n2">
+    <input type="number" placeholder="n3" id="n3">
+    <button onclick="calcular()">calcular</button>
+</body>
+</html>

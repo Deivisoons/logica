@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Exercício 7</title>
+
+    <script>
+    
+        //função
+        function calculo(){
+            
+            //Obter os dados
+            var codigo = document.getElementById("codigo").value;
+            var quantidade = document.getElementById("quantidade").value;
+
+            //Condicional
+            if(codigo == 1){
+                var total = 11.5 * quantidade;
+                
+                var pagamento = prompt("Total a pagar R$ "+total);
+
+                alert("O troco será de R$ "+(pagamento-total));
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <input type="number" placeholder="Informe o código"  id="codigo">
+    <input type="number" placeholder="Informe a quantidade"  id="quantidade">
+    <button onclick="calculo()">Calcular</button>
+</body>
+</html>

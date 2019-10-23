@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 5</title>
+
+    <script>
+        // função 
+        function calcular(){
+
+            //obter dados
+            var n1 = parseInt(document.getElementById("n1").value);
+            var n2 = parseInt(document.getElementById("n2").value);
+
+            //calcular
+            if(n1==n2){
+                alert(n1+n2);
+            }else{
+                alert(n1*n2)
+            }
+
+        }
+
+    
+    </script>
+
+</head>
+<body>
+    <input type="number" placeholder="n1" id="n1">
+    <input type="number" placeholder="n2" id="n2">
+    <button onclick="calcular()">calcular</button>
+    
+</body>
+</html>

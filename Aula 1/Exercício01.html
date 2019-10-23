@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício01</title>
+
+    <script>
+        //Função
+        function mensagem(){
+
+            //Obter os dados
+            var nome = document.getElementById("nome").value;
+            var idade = document.getElementById("idade").value;
+            var cidade = document.getElementById("cidade").value;
+
+            //mensagem
+            alert("Olá "+nome+", você tem "+idade+" anos e mora em "+cidade);
+        }
+    </script>
+</head>
+<body>
+    
+    <input type="text" placeholder="Nome" id="nome">
+    <input type="text" placeholder="Idade" id="idade">
+    <input type="text" placeholder="Cidade" id="cidade">
+    <button onclick="mensagem()">Enviar</button>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 02</title>
+
+    <script>
+    //função 
+    function somar(){
+
+        //Obter dados 
+        var numero1 = parseInt(document.getElementById("numero1").value);
+        var numero2 = parseInt(document.getElementById("numero2").value);
+        
+        //Soma dos valores
+        alert(numero1+numero2);
+    }
+
+        //funçao 
+    function subtrair(){
+
+        //obter dados
+        var numero1 = parseInt(document.getElementById("numero1").value);
+        var numero2 = parseInt(document.getElementById("numero2").value);
+
+        //Subtração dos valores
+        alert(numero1-numero2);
+    }
+
+    //função 
+    function multiplicar(){
+
+    //obter dados
+    var numero1 = parseInt(document.getElementById("numero1").value);
+    var numero2 = parseInt(document.getElementById("numero2").value);
+
+    //Multiplicação dos valores
+    alert(numero1*numero2);
+    }
+
+    //função 
+    function dividir(){
+
+        //obter dados
+        var numero1 = parseInt(document.getElementById("numero1").value);
+        var numero2 = parseInt(document.getElementById("numero2").value);
+
+        //Divisão dos valores
+        alert(numero1/numero2);
+    }
+
+    
+    
+    </script>
+</head>
+
+<body>
+    <input type="number" placeholder="numero 1" id="numero1">
+    <input type="number" placeholder="numero 2" id="numero2">
+    <button onclick="somar()" >Somar</button>
+    <button onclick="subtrair()" >subtrair</button>
+    <button onclick="multiplicar()" >multiplicar</button>
+    <button onclick="dividir()" >dividir</button>
+    
+</body>
+</html>
