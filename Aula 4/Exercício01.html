@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Vendas</title>
+</head>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!-- Estilos -->
+<link href="exercício.css" rel="stylesheet">
+<body>
+    
+    <!-- Formulário -->
+    <div>
+        <input type="text" placeholder="Código" id="codigo" class="form-control">
+        <input type="text" placeholder="Quantidade" id="quantidade" class="form-control">
+        <input type="text" placeholder="Cupom" id="cupom" class="form-control">
+        <input type="text" placeholder="email" id="email" class="form-control">
+        <button class="btn btn-dark" onclick="Comprar()">Comprar</button>
+    </div>
+
+    <!-- Tabela -->
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Quantidade</th>
+                <th>Cupom</th>
+                <th>E-mail</th>
+                <th>Editar</th>
+            </tr>
+        </thead>
+    </table>
+</body>
+</html>

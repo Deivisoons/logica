@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>While</title>
+    <script>
+        function calcular(){
+        
+            //Obter o número
+            var numero = document.getElementById("numero").value;
+
+            //Obter o local onde será realizar o cálculo
+            var resultado = document.getElementById("resultado");
+
+            //Limpar os cálculos ralizados
+            resultado.innerHTML ="";
+
+            //Índice
+            var indice = 0;
+            //Laço
+            while(indice <= 10){
+                resultado.innerHTML += numero+" X "+indice+" = "+numero*indice + "<hr>";
+                indice++;
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="number" placeholder="Informe um número" id="numero">
+    <Button onclick="calcular()">Calcular</Button>
+
+    <div id="resultado"></div>
+    
+</body>
+</html>

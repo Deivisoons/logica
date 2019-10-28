@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Agenda</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Estilos-->
+    <link href="Agenda.css" rel="stylesheet">
+
+    <!-- Script -->
+    <script src="agenda.js"></script>
+</head>
+<body>
+    
+    <!-- Fomulário -->
+    <div>
+        <input type="text" placeholder="Nome" id="nome" class="form-control">
+        <input type="text" placeholder="Idade" id="idade"  class="form-control">
+        <input type="text" placeholder="E-mail" id="email" class="form-control">
+        <button class="btn btn-primary" onclick="cadastrar()">Cadastrar</button>
+    </div>
+
+    <!-- Tabela -->
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>E-mail</th>
+                <th>Editar</th>
+            </tr>
+        </thead>
+
+        <tbody></tbody>
+    </table>
+</body>
+</html>
