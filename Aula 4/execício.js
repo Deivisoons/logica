@@ -1,5 +1,5 @@
 //Vetor
-var produtos =[]
+var produtos =[];
 
 //Comprar
 function comprar (){
@@ -8,17 +8,19 @@ function comprar (){
     var codigo = document.getElementById("codigo");
     var quantidade = document.getElementById("quantidade");
     var cupom = document.getElementById("cupom");
+    var email = document.getElementById("email");
 
     //Vetor de linha
-    var linha = [codigo.value, quantidade.value, cupom.value];
+    var linha = [codigo.value, quantidade.value, cupom.value, email.value];
 
     //cadastrar no vertor
-    conrtratos.push(linha);
+    contatos.push(linha);
 
     //Limpar campos
     codigo.value = "";
     quantidade.value = "";
     cupom.value = "";
+    email.value = "";
 
     //Cursor no campo do codigo
     codigo.focus();
