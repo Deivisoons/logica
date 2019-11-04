@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 01</title>
+
+    <script>
+        //Contadores
+        var desenvolvedor = 0;
+        var analista = 0;
+        var gerente = 0;
+        var atendente = 0;
+        var estagiario = 0;
+        
+         //Ao carregar
+        window.onload = function(){
+            document.getElementById("desenvolvedor").innerText = "Não há desenvolvedores cadastrados";
+            document.getElementById("analista").innerText = "Não há analistas cadastrados";
+            document.getElementById("gerente").innerText = "Não há gerentes cadastrados";
+            document.getElementById("atendente").innerText = "Não há atendentes cadastrados";
+            document.getElementById("estagiario").innerText = "Não há estagiários cadastrados";
+        }
+
+        //Funçao do botão
+        function contar(){
+            var cargo = document.getElementById("cargo").value;
+
+                switch(cargo){
+                    case "Desenvolvedor":
+                    desenvolvedor++;
+
+                    if(desenvolvedor == 1){
+                        document.getElementById("desenvolvedor").innerText = "Há um desenvolvedor cadastrado";
+                    }else{
+                        document.getElementById ("desenvolvedor").innerText = "Há "+desenvolvedor+" desenvolvedores cadastrados";
+                    }
+                break;
+
+                case "Analista":
+                    analista++;
+
+                    if(analista == 1){
+                        document.getElementById("analista").innerText = "Há um analista cadastrado";
+                    }else{
+                        document.getElementById ("analista").innerText = "Há "+analista+" analistas cadastrados";
+                    }
+                break;
+                
+                case "Gerente":
+                    gerente++;
+
+                    if(gerente == 1){
+                        document.getElementById("gerente").innerText = "Há um gerente cadastrado";
+                    }else{
+                        document.getElementById ("gerente").innerText = "Há "+gerente+" gerentes cadastrados";
+                    }
+                 break; 
+
+                 case "Atendente":
+                    atendente++;
+
+                    if(atendente == 1){
+                        document.getElementById("atendente").innerText = "Há um atendente cadastrado";
+                    }else{
+                        document.getElementById ("atendente").innerText = "Há "+atendente+" atendenetes cadastrados";
+                    }
+                break;
+
+                case "Estagiário":
+                    estagiario++;
+
+                    if(estagiario == 1){
+                        document.getElementById("estagiario").innerText = "Há um estagiário cadastrado";
+                    }else{
+                        document.getElementById ("estagiario").innerText = "Há "+estagiario+" estagiário cadastrados";
+                    }
+                break;
+                
+        
+                }
+        }
+
+    </script>
+</head>
+<body>
+    
+    <!-- Formulário  -->
+    <div>
+        <select id="cargo">
+            <option>Desenvolvedor</option>
+            <option>Analista</option>
+            <option>Gerente</option>
+            <option>Atendente</option>
+            <option>Estagiário</option>
+        </select>
+
+        <button onclick="contar()">Enviar</button>
+    </div>
+
+    <!-- Divisão -->
+    <hr>
+
+    <!-- Contadores -->
+    <p id="desenvolvedor"></p>
+    <p id="analista"></p>
+    <p id="gerente"></p>
+    <p id="atendente"></p>
+    <p id="estagiario"></p>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 03</title>
+
+    <script>
+        //Contadores
+        var jao = 0;
+        var cidao = 0;
+        var dalcinio = 0;
+        var jeromel = 0;
+        var luzenildo = 0;
+
+        //Ao carregar
+        window.onload = function(){
+        document.getElementById("jao").innerText = "Candidato número 1";
+        document.getElementById("cidao").innerText = "Candidato número  2";
+        document.getElementById("dalcinio").innerText = "Candidato número 3";
+        document.getElementById("jeromel").innerText = "Candidato número 4";
+        document.getElementById("luzenildo").innerText = "Candidato número 5";
+        }
+
+        //Função do botão
+        function contar(){
+
+            //Obter dados
+            var candidato = document.getElementById("candidato").value;
+
+            switch (candidato){
+                case "jao":
+                jao++;
+                document.getElementById("jao").innerText = jao;
+                break;
+
+            }
+        
+
+        }
+    
+    </script>
+</head>
+<body>
+    
+        <!-- Formulário  -->
+        <div>
+                <select id="candidato">
+                    <option>jao</option>
+                    <option>cidao</option>
+                    <option>dalcinio</option>
+                    <option>jeromel</option>
+                    <option>luzenildo</option>
+                </select>
+        
+                <button onclick="contar()">Votar</button>
+            </div>
+
+    <!-- Divisão -->
+    <hr>
+
+    <!-- Contadores -->
+    <p id="jao"></p>
+    <p id="cidao"></p>
+    <p id="dalcinio"></p>
+    <p id="jeromel"></p>
+    <p id="luzenildo"></p>
+</body>
+</html>

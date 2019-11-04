@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 02</title>
+
+    <script>
+        //Contadors
+        var muito_abaixo_do_peso = 0;
+        var abaixo_do_peso = 0;
+        var peso_normal = 0;
+        var acima_do_peso = 0;
+        var obesidade = 0;
+
+        //Ao carregar
+        window.onload = function(){
+            document.getElementById("muito_abaixo_do_peso").innerText = "Não há usuários muito abaixo do peso";
+            document.getElementById("abaixo_do_peso").innerText = "Não há usuários com esse peso";
+            document.getElementById("peso_normal").innerText = "Usuário com peso ideal";
+            document.getElementById("acima_do_peso").innerText = "Tem que se cuidar filhão";
+            document.getElementById("obesidade").innerText = "Dieta urgente";
+        }
+
+    //Função 
+    function media(){
+        
+       //obter dados
+            var peso = parseFloat(document.getElementById("peso").value);
+            var altura = parseFloat(document.getElementById("altura").value);
+
+            //media
+            var media =(peso/(altura*altura));
+
+            //Calcular
+            if(media <= 17){
+                alert("Muito abaixo do peso");
+                muito_abaixo_do_peso++;
+                document.getElementById("muito_abaixo_do_peso").innerText = "Pessoas muito abaixo do peso: "+muito_abaixo_do_peso;
+
+            }else if(media <= 18.5){
+                alert("abaixo do peso");
+                abaixo_do_peso++;
+                document.getElementById("abaixo_do_peso").innerText = "Pessoas abaixo do peso: "+abaixo_do_peso;
+
+            }else if(media <=25){
+                alert("peso normal");
+                peso_normal++;
+                document.getElementById("peso_normal").innerText = "Pessoas com o peso normal: "+peso_normal;
+
+            }else if(media <=30){
+                alert("acima do peso")
+                acima_do_peso++;
+                document.getElementById("acima_do_peso").innerText = "Pessoas acima do peso: "+acima_do_peso;
+
+            }else if(media >30){
+                alert("obesidade");
+                obesidade++;
+                document.getElementById("obesidade").innerText = "Pessoas com obesidade: "+obesidade;
+            }
+
+
+
+    }
+
+
+    </script>
+</head>
+<body>
+      
+    <!-- Formulário -->
+    <div>
+        <input type="number" placeholder="peso" id="peso">
+        <input type="number" placeholder="altura" id="altura">
+        <button onclick="media()">Calcular</button>
+    </div>
+
+    <!-- Divisão -->
+    <hr>
+
+    <!-- contadores -->
+    <p id="muito_abaixo_do_peso"></p>
+    <p id="abaixo_do_peso"></p>
+    <p id="peso_normal"></p>
+    <p id="acima_do_peso"></p>
+    <p id="obesidade"></p>
+
+    <hr>
+
+    <p id="muito_abaixo_do_peso"></p>
+    <p id="abaixo_do_peso"></p>
+    <p id="peso_normal"></p>
+    <p id="acima_do_peso"></p>
+    <p id="obesidade"></p>
+</body>
+</html>
